@@ -35,12 +35,11 @@ cd titanic-eda
 
 
 2️⃣ Install dependencies
-```bash
+
 pip install pandas numpy matplotlib seaborn scipy
 
 
 3️⃣ Run the script
-```bash
 python titanic_eda.py
 📈 Exploratory Data Analysis (EDA)
 🔹 Survival Rate by Gender
@@ -58,7 +57,7 @@ sns.barplot(x='Pclass', y='Survived', data=df, palette='pastel')
 Insight: Young children had higher survival rates.
 sns.histplot(df[df['Survived'] == 1]['Age'], bins=30, color='green', kde=True)
 sns.histplot(df[df['Survived'] == 0]['Age'], bins=30, color='red', kde=True)
-```bash
+
 
 🧪 Hypothesis Testing
 📌 1. Chi-Square Test (Gender & Survival)
